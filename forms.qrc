@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/forms">
+        <file>formUsuarios.ui</file>
+    </qresource>
+    <qresource prefix="/img">
+        <file>dolar.png</file>
+        <file>favicon.ico</file>
+    </qresource>
+</RCC>

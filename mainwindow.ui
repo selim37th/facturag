@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>685</width>
+    <height>686</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FACG</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="forms.qrc">
+    <normaloff>:/img/favicon.ico</normaloff>:/img/favicon.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="3" column="0" colspan="5">
+     <layout class="QHBoxLayout" name="horizontalLayoutBusqueda">
+      <property name="spacing">
+       <number>4</number>
+      </property>
+      <property name="sizeConstraint">
+       <enum>QLayout::SetMinimumSize</enum>
+      </property>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>DNI</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="txtBuscarPorDNI"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>Nombre</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="txtBuscarPorNombre"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Primer Apellido</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="txtBuscarPorApellido1"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayoutNombre">
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>Segundo Apellido</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="txtBuscarPorApellido2"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnBorrarTxtBuscar">
+        <property name="text">
+         <string>Borrar Busqueda</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="3">
+     <widget class="QPushButton" name="btnIrAhoy">
+      <property name="text">
+       <string>Ir a hoy</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0" colspan="5">
+     <layout class="QGridLayout" name="gridLayoutListado">
+      <item row="0" column="0">
+       <widget class="QTableView" name="tw">
+        <property name="selectionMode">
+         <enum>QAbstractItemView::SingleSelection</enum>
+        </property>
+        <property name="selectionBehavior">
+         <enum>QAbstractItemView::SelectRows</enum>
+        </property>
+        <property name="sortingEnabled">
+         <bool>true</bool>
+        </property>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QPushButton" name="btnBorrarCliente">
+          <property name="text">
+           <string>Borrar Cliente</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnPagosFacturas">
+          <property name="text">
+           <string>Pagos/Cobros/Facturas</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnFichaCliente">
+          <property name="text">
+           <string>Editar Ficha</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnDeshacerCambios">
+          <property name="text">
+           <string>Deshacer Cambios</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnGuardarCambiosClientes">
+          <property name="text">
+           <string>Guardar Cambios</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Eventos para el:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="4">
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="text">
+       <string>UI Form</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0" colspan="5">
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Buscar por:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QDateEdit" name="fechaSeleccionada">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1" colspan="4">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QPlainTextEdit" name="txtEventos"/>
+      </item>
+      <item row="1" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="text">
+           <string>Marca Done</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_3">
+          <property name="text">
+           <string>Alarma</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnEliminarEvento">
+          <property name="text">
+           <string>Eliminar</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnGuardarDetalleEvento">
+          <property name="text">
+           <string>Guardar</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="0" rowspan="2">
+     <widget class="QCalendarWidget" name="calendario">
+      <property name="cursor">
+       <cursorShape>CrossCursor</cursorShape>
+      </property>
+      <property name="gridVisible">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>685</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFACG">
+    <property name="title">
+     <string>FACG</string>
+    </property>
+    <addaction name="actionDatos_Empresa"/>
+    <addaction name="separator"/>
+    <addaction name="actionSalir"/>
+   </widget>
+   <widget class="QMenu" name="menu_Clientes">
+    <property name="title">
+     <string>&amp;Clientes</string>
+    </property>
+    <addaction name="actionNuevo"/>
+   </widget>
+   <widget class="QMenu" name="menuProductos_Servicios">
+    <property name="title">
+     <string>Productos/Servicios</string>
+    </property>
+    <addaction name="actionCrearProducto"/>
+    <addaction name="actionListarProductos"/>
+   </widget>
+   <addaction name="menuFACG"/>
+   <addaction name="menu_Clientes"/>
+   <addaction name="menuProductos_Servicios"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionDatos_Empresa">
+   <property name="text">
+    <string>Datos Empresa</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+  <action name="actionNuevo">
+   <property name="text">
+    <string>Nuevo</string>
+   </property>
+  </action>
+  <action name="actionCrearProducto">
+   <property name="text">
+    <string>Crear</string>
+   </property>
+  </action>
+  <action name="actionListarProductos">
+   <property name="text">
+    <string>Listar</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="forms.qrc"/>
+ </resources>
+ <connections/>
+</ui>
